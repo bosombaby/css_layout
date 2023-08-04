@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .show-width {
+            padding: 1em;
+            background-color: skyblue;
+        }
+
+        @media (min-width: 600px) {
+            .show-width {
+                background-color: pink;
+            }
+        }
+    </style>
+    <title>媒体查询入门</title>
+</head>
+
+<body>
+
+    <h1 class="show-width"></h1>
+    <script>
+        //获取屏幕的宽度
+        const widthDom = document.querySelector('.show-width');
+
+        let getWidth = () => {
+            widthDom.innerHTML = window.innerWidth + 'px';
+        }
+
+        window.onload = getWidth
+        window.addEventListener('resize', getWidth)
+    </script>
+</body>
+
+</html>

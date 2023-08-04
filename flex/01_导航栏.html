@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            background-color: skyblue;
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .navigation li a {
+            display: block;
+            text-decoration: none;
+            padding: 1em 2em;
+            color: white;
+
+        }
+
+        .navigation li a:hover {
+            background-color: slateblue;
+        }
+
+        @media all and (max-width:800px) {
+            .navigation {
+                justify-content: space-around;
+            }
+        }
+
+        @media all and (max-width:480px) {
+            .navigation {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navigation li a {
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    </style>
+    <title>01_导航栏</title>
+</head>
+
+<body>
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</body>
+
+</html>
