@@ -17,7 +17,7 @@ img {
   max-width: 980px;
 }
 
-.grid {
+.container {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 980px;
@@ -70,11 +70,43 @@ nav a:hover {
   margin: 0 25px 20px 0;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex article {
+  flex: 2;
+  margin-right: 25px;
+}
+
+.flex aside {
+  flex: 1;
+}
+
+.photos {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 10px;
+
+}
+
+.photos li img {
+  display: inline-block;
+  max-width: 150px;
+
+}
 
 @media (max-width:600px) {
   nav ul {
     flex-direction: column;
     align-items: center;
     gap: 1em;
+  }
+
+  .flex {
+    flex-direction: column;
   }
 }
