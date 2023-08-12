@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: gray;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flow-root;
+        }
+
+        .left {
+            float: left;
+            width: 100px;
+            height: 100%;
+            background-color: pink;
+            display: block;
+        }
+
+        .center {
+            background-color: darksalmon;
+            margin: 0 100px;
+            height: 100%;
+        }
+
+        .right {
+            float: right;
+            width: 100px;
+            background-color: skyblue;
+            height: 100%;
+        }
+    </style>
+    <title>01_浮动</title>
+</head>
+
+<!-- 有点bug -->
+
+<body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>
