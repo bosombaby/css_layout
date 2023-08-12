@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: gray;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .left {
+            position: absolute;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: pink;
+        }
+
+        .right {
+            position: absolute;
+            left: 200px;
+            right: 0;
+            background-color: skyblue;
+            height: 100%;
+        }
+    </style>
+    <title>02_绝对定位</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>
