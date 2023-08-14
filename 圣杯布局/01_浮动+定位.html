@@ -9,45 +9,53 @@
             padding: 0;
         }
 
-        .container {
-            border: 1px solid black;
-            overflow: hidden;
-            padding: 0px 100px;
-            min-width: 100px;
+        #container {
+            padding-left: 200px;
+            padding-right: 150px;
+            overflow: auto;
         }
 
-        .left {
-            background-color: greenyellow;
+        #container div {
             float: left;
-            width: 100px;
-            margin-left: -100%;
-            position: relative;
-            left: -100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
         }
 
         .center {
-            background-color: darkorange;
-            float: left;
             width: 100%;
+            background-color: lightcoral;
+        }
+
+        .left {
+            width: 200px;
+            position: relative;
+            left: -200px;
+            margin-left: -100%;
+            background-color: lightcyan;
         }
 
         .right {
-            background-color: darkgreen;
-            float: left;
-            width: 100px;
-            margin-left: -100px;
-            position: relative;
-            left: 100px;
+            width: 150px;
+            margin-right: -150px;
+            background-color: lightgreen;
+        }
+
+        .clearfix:after {
+            display: block;
+            content: "";
+            clear: both;
         }
     </style>
 </head>
 
 <body>
-    <section class="container">
-        <article class="center"><br /><br /><br /></article>
-        <article class="left"><br /><br /><br /></article>
-        <article class="right"><br /><br /><br /></article>
-    </section>
+    <div id="container" class="clearfix">
+        <div class="center">我是中间</div>
+        <div class="left">我是左边</div>
+        <div class="right">我是右边</div>
+    </div>
+
 </body>
 
 </html>
