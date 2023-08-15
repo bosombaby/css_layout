@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+        }
+
+        .parent {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 1px solid skyblue;
+            /* margin: 200px auto; */
+        }
+
+        .children {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: pink;
+        }
+    </style>
+    <title>03_定位属性 + margin</title>
+</head>
+
+
+<body>
+    <div class="parent">
+        <div class="children"></div>
+    </div>
+</body>
+
+</html>

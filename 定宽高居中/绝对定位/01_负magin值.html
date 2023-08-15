@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+        }
+
+        .parent {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 1px solid skyblue;
+            /* margin: 200px auto; */
+        }
+
+        .children {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 50%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+            background-color: pink;
+        }
+    </style>
+    <title>01_绝对定位和负magin值</title>
+</head>
+
+
+<body>
+    <div class="parent">
+        <div class="children"></div>
+    </div>
+</body>
+
+</html>
