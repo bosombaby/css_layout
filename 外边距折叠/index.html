@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1 {
+            margin-bottom: 20px;
+            background-color: pink;
+        }
+
+        .box2 {
+            margin-top: 10px;
+            background-color: skyblue;
+
+        }
+
+        .box3 {
+            margin-top: 20px;
+            background-color: aquamarine;
+        }
+
+        .box4 {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            background-color: cadetblue;
+        }
+
+        p {
+            margin: 10px 0 20px 0;
+            background: yellow;
+        }
+    </style>
+    <title>外边距折叠</title>
+</head>
+
+<body>
+    <h1>相邻的兄弟元素</h1>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <h1>外边距塌陷</h1>
+    <div class="box3">
+        <div class="box4"></div>
+    </div>
+
+    <h1>空的区块</h1>
+    <p>1111</p>
+</body>
+
+</html>
