@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color: #ccc;
+      }
+      .div-a {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+      .div-b {
+        width: 200px;
+        flex: 1;
+        overflow: scroll;
+        background-color: skyblue;
+      }
+      .div-c {
+        width: 100px;
+        height: 2000px;
+        background-color: green;
+      }
+    </style>
+    <title>面试题</title>
+  </head>
+  <body>
+    <!-- 2.一个div-a，宽度200，高度200，背景红色，靠左上角放至
+    一个div-b，宽度200，背景蓝色，在a下方，撑满剩余的高度
+    在b中放至一个div-c，宽度100，高度为2000，背景绿色，b支持垂直滚动条 -->
+    <div class="container">
+      <div class="div-a"></div>
+      <div class="div-b">
+        <div class="div-c"></div>
+      </div>
+    </div>
+  </body>
+</html>
